@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A568B7B28173566005B7E3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568B7A28173566005B7E3F /* AppDelegate.swift */; };
+		3A568B7D28173566005B7E3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568B7C28173566005B7E3F /* SceneDelegate.swift */; };
+		3A568B7F28173566005B7E3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568B7E28173566005B7E3F /* ViewController.swift */; };
+		3A568B8228173566005B7E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A568B8028173566005B7E3F /* Main.storyboard */; };
+		3A568B8428173576005B7E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A568B8328173576005B7E3F /* Assets.xcassets */; };
+		3A568B8728173576005B7E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A568B8528173576005B7E3F /* LaunchScreen.storyboard */; };
+		3A568B9228173577005B7E3F /* TablasFrogmiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568B9128173577005B7E3F /* TablasFrogmiTests.swift */; };
+		3A568B9D28173577005B7E3F /* TablasFrogmiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568B9C28173577005B7E3F /* TablasFrogmiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A568B8E28173577005B7E3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A568B6F28173565005B7E3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A568B7628173566005B7E3F;
+			remoteInfo = TablasFrogmi;
+		};
+		3A568B9928173577005B7E3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A568B6F28173565005B7E3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A568B7628173566005B7E3F;
+			remoteInfo = TablasFrogmi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A568B7728173566005B7E3F /* TablasFrogmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TablasFrogmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A568B7A28173566005B7E3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A568B7C28173566005B7E3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3A568B7E28173566005B7E3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A568B8128173566005B7E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A568B8328173576005B7E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A568B8628173576005B7E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A568B8828173576005B7E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A568B8D28173577005B7E3F /* TablasFrogmiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TablasFrogmiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A568B9128173577005B7E3F /* TablasFrogmiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablasFrogmiTests.swift; sourceTree = "<group>"; };
+		3A568B9328173577005B7E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A568B9828173577005B7E3F /* TablasFrogmiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TablasFrogmiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A568B9C28173577005B7E3F /* TablasFrogmiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablasFrogmiUITests.swift; sourceTree = "<group>"; };
+		3A568B9E28173577005B7E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A568B7428173566005B7E3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A568B8A28173577005B7E3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A568B9528173577005B7E3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A568B6E28173565005B7E3F = {
+			isa = PBXGroup;
+			children = (
+				3A568B7928173566005B7E3F /* TablasFrogmi */,
+				3A568B9028173577005B7E3F /* TablasFrogmiTests */,
+				3A568B9B28173577005B7E3F /* TablasFrogmiUITests */,
+				3A568B7828173566005B7E3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A568B7828173566005B7E3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A568B7728173566005B7E3F /* TablasFrogmi.app */,
+				3A568B8D28173577005B7E3F /* TablasFrogmiTests.xctest */,
+				3A568B9828173577005B7E3F /* TablasFrogmiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A568B7928173566005B7E3F /* TablasFrogmi */ = {
+			isa = PBXGroup;
+			children = (
+				3A568B7A28173566005B7E3F /* AppDelegate.swift */,
+				3A568B7C28173566005B7E3F /* SceneDelegate.swift */,
+				3A568B7E28173566005B7E3F /* ViewController.swift */,
+				3A568B8028173566005B7E3F /* Main.storyboard */,
+				3A568B8328173576005B7E3F /* Assets.xcassets */,
+				3A568B8528173576005B7E3F /* LaunchScreen.storyboard */,
+				3A568B8828173576005B7E3F /* Info.plist */,
+			);
+			path = TablasFrogmi;
+			sourceTree = "<group>";
+		};
+		3A568B9028173577005B7E3F /* TablasFrogmiTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A568B9128173577005B7E3F /* TablasFrogmiTests.swift */,
+				3A568B9328173577005B7E3F /* Info.plist */,
+			);
+			path = TablasFrogmiTests;
+			sourceTree = "<group>";
+		};
+		3A568B9B28173577005B7E3F /* TablasFrogmiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A568B9C28173577005B7E3F /* TablasFrogmiUITests.swift */,
+				3A568B9E28173577005B7E3F /* Info.plist */,
+			);
+			path = TablasFrogmiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A568B7628173566005B7E3F /* TablasFrogmi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A568BA128173577005B7E3F /* Build configuration list for PBXNativeTarget "TablasFrogmi" */;
+			buildPhases = (
+				3A568B7328173566005B7E3F /* Sources */,
+				3A568B7428173566005B7E3F /* Frameworks */,
+				3A568B7528173566005B7E3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TablasFrogmi;
+			productName = TablasFrogmi;
+			productReference = 3A568B7728173566005B7E3F /* TablasFrogmi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A568B8C28173577005B7E3F /* TablasFrogmiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A568BA428173577005B7E3F /* Build configuration list for PBXNativeTarget "TablasFrogmiTests" */;
+			buildPhases = (
+				3A568B8928173577005B7E3F /* Sources */,
+				3A568B8A28173577005B7E3F /* Frameworks */,
+				3A568B8B28173577005B7E3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A568B8F28173577005B7E3F /* PBXTargetDependency */,
+			);
+			name = TablasFrogmiTests;
+			productName = TablasFrogmiTests;
+			productReference = 3A568B8D28173577005B7E3F /* TablasFrogmiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A568B9728173577005B7E3F /* TablasFrogmiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A568BA728173577005B7E3F /* Build configuration list for PBXNativeTarget "TablasFrogmiUITests" */;
+			buildPhases = (
+				3A568B9428173577005B7E3F /* Sources */,
+				3A568B9528173577005B7E3F /* Frameworks */,
+				3A568B9628173577005B7E3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A568B9A28173577005B7E3F /* PBXTargetDependency */,
+			);
+			name = TablasFrogmiUITests;
+			productName = TablasFrogmiUITests;
+			productReference = 3A568B9828173577005B7E3F /* TablasFrogmiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A568B6F28173565005B7E3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3A568B7628173566005B7E3F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3A568B8C28173577005B7E3F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3A568B7628173566005B7E3F;
+					};
+					3A568B9728173577005B7E3F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3A568B7628173566005B7E3F;
+					};
+				};
+			};
+			buildConfigurationList = 3A568B7228173565005B7E3F /* Build configuration list for PBXProject "TablasFrogmi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A568B6E28173565005B7E3F;
+			productRefGroup = 3A568B7828173566005B7E3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A568B7628173566005B7E3F /* TablasFrogmi */,
+				3A568B8C28173577005B7E3F /* TablasFrogmiTests */,
+				3A568B9728173577005B7E3F /* TablasFrogmiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A568B7528173566005B7E3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A568B8728173576005B7E3F /* LaunchScreen.storyboard in Resources */,
+				3A568B8428173576005B7E3F /* Assets.xcassets in Resources */,
+				3A568B8228173566005B7E3F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A568B8B28173577005B7E3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A568B9628173577005B7E3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A568B7328173566005B7E3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A568B7F28173566005B7E3F /* ViewController.swift in Sources */,
+				3A568B7B28173566005B7E3F /* AppDelegate.swift in Sources */,
+				3A568B7D28173566005B7E3F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A568B8928173577005B7E3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A568B9228173577005B7E3F /* TablasFrogmiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A568B9428173577005B7E3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A568B9D28173577005B7E3F /* TablasFrogmiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A568B8F28173577005B7E3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A568B7628173566005B7E3F /* TablasFrogmi */;
+			targetProxy = 3A568B8E28173577005B7E3F /* PBXContainerItemProxy */;
+		};
+		3A568B9A28173577005B7E3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A568B7628173566005B7E3F /* TablasFrogmi */;
+			targetProxy = 3A568B9928173577005B7E3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A568B8028173566005B7E3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A568B8128173566005B7E3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A568B8528173576005B7E3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A568B8628173576005B7E3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A568B9F28173577005B7E3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A568BA028173577005B7E3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A568BA228173577005B7E3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FA2KNJM7Z2;
+				INFOPLIST_FILE = TablasFrogmi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ejemplo.TablasFrogmi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A568BA328173577005B7E3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FA2KNJM7Z2;
+				INFOPLIST_FILE = TablasFrogmi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ejemplo.TablasFrogmi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A568BA528173577005B7E3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FA2KNJM7Z2;
+				INFOPLIST_FILE = TablasFrogmiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ejemplo.TablasFrogmiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TablasFrogmi.app/TablasFrogmi";
+			};
+			name = Debug;
+		};
+		3A568BA628173577005B7E3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FA2KNJM7Z2;
+				INFOPLIST_FILE = TablasFrogmiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ejemplo.TablasFrogmiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TablasFrogmi.app/TablasFrogmi";
+			};
+			name = Release;
+		};
+		3A568BA828173577005B7E3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FA2KNJM7Z2;
+				INFOPLIST_FILE = TablasFrogmiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ejemplo.TablasFrogmiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TablasFrogmi;
+			};
+			name = Debug;
+		};
+		3A568BA928173577005B7E3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FA2KNJM7Z2;
+				INFOPLIST_FILE = TablasFrogmiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ejemplo.TablasFrogmiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TablasFrogmi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A568B7228173565005B7E3F /* Build configuration list for PBXProject "TablasFrogmi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A568B9F28173577005B7E3F /* Debug */,
+				3A568BA028173577005B7E3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A568BA128173577005B7E3F /* Build configuration list for PBXNativeTarget "TablasFrogmi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A568BA228173577005B7E3F /* Debug */,
+				3A568BA328173577005B7E3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A568BA428173577005B7E3F /* Build configuration list for PBXNativeTarget "TablasFrogmiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A568BA528173577005B7E3F /* Debug */,
+				3A568BA628173577005B7E3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A568BA728173577005B7E3F /* Build configuration list for PBXNativeTarget "TablasFrogmiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A568BA828173577005B7E3F /* Debug */,
+				3A568BA928173577005B7E3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A568B6F28173565005B7E3F /* Project object */;
+}
