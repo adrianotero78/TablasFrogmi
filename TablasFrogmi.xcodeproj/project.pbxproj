@@ -15,6 +15,18 @@
 		3A568B8728173576005B7E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A568B8528173576005B7E3F /* LaunchScreen.storyboard */; };
 		3A568B9228173577005B7E3F /* TablasFrogmiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568B9128173577005B7E3F /* TablasFrogmiTests.swift */; };
 		3A568B9D28173577005B7E3F /* TablasFrogmiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568B9C28173577005B7E3F /* TablasFrogmiUITests.swift */; };
+		3A568BAE28173822005B7E3F /* LocalesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BAD28173822005B7E3F /* LocalesTableViewController.swift */; };
+		3A568BAF28173822005B7E3F /* LocalesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BAD28173822005B7E3F /* LocalesTableViewController.swift */; };
+		3A568BB028173822005B7E3F /* LocalesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BAD28173822005B7E3F /* LocalesTableViewController.swift */; };
+		3A568BB528173D95005B7E3F /* LocalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BB428173D94005B7E3F /* LocalesTableViewCell.swift */; };
+		3A568BB628173D95005B7E3F /* LocalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BB428173D94005B7E3F /* LocalesTableViewCell.swift */; };
+		3A568BB728173D95005B7E3F /* LocalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BB428173D94005B7E3F /* LocalesTableViewCell.swift */; };
+		3A568BBC28177423005B7E3F /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BBB28177423005B7E3F /* Local.swift */; };
+		3A568BBD28177424005B7E3F /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BBB28177423005B7E3F /* Local.swift */; };
+		3A568BBE28177424005B7E3F /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BBB28177423005B7E3F /* Local.swift */; };
+		3A568BC328177443005B7E3F /* Conectar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BC228177443005B7E3F /* Conectar.swift */; };
+		3A568BC428177443005B7E3F /* Conectar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BC228177443005B7E3F /* Conectar.swift */; };
+		3A568BC528177443005B7E3F /* Conectar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568BC228177443005B7E3F /* Conectar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,10 @@
 		3A568B9828173577005B7E3F /* TablasFrogmiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TablasFrogmiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A568B9C28173577005B7E3F /* TablasFrogmiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablasFrogmiUITests.swift; sourceTree = "<group>"; };
 		3A568B9E28173577005B7E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A568BAD28173822005B7E3F /* LocalesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalesTableViewController.swift; sourceTree = "<group>"; };
+		3A568BB428173D94005B7E3F /* LocalesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalesTableViewCell.swift; sourceTree = "<group>"; };
+		3A568BBB28177423005B7E3F /* Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
+		3A568BC228177443005B7E3F /* Conectar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conectar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +119,10 @@
 				3A568B7C28173566005B7E3F /* SceneDelegate.swift */,
 				3A568B7E28173566005B7E3F /* ViewController.swift */,
 				3A568B8028173566005B7E3F /* Main.storyboard */,
+				3A568BBB28177423005B7E3F /* Local.swift */,
+				3A568BC228177443005B7E3F /* Conectar.swift */,
+				3A568BAD28173822005B7E3F /* LocalesTableViewController.swift */,
+				3A568BB428173D94005B7E3F /* LocalesTableViewCell.swift */,
 				3A568B8328173576005B7E3F /* Assets.xcassets */,
 				3A568B8528173576005B7E3F /* LaunchScreen.storyboard */,
 				3A568B8828173576005B7E3F /* Info.plist */,
@@ -259,7 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A568B7F28173566005B7E3F /* ViewController.swift in Sources */,
+				3A568BBC28177423005B7E3F /* Local.swift in Sources */,
 				3A568B7B28173566005B7E3F /* AppDelegate.swift in Sources */,
+				3A568BAE28173822005B7E3F /* LocalesTableViewController.swift in Sources */,
+				3A568BB528173D95005B7E3F /* LocalesTableViewCell.swift in Sources */,
+				3A568BC328177443005B7E3F /* Conectar.swift in Sources */,
 				3A568B7D28173566005B7E3F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A568BAF28173822005B7E3F /* LocalesTableViewController.swift in Sources */,
 				3A568B9228173577005B7E3F /* TablasFrogmiTests.swift in Sources */,
+				3A568BB628173D95005B7E3F /* LocalesTableViewCell.swift in Sources */,
+				3A568BBD28177424005B7E3F /* Local.swift in Sources */,
+				3A568BC428177443005B7E3F /* Conectar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A568BB028173822005B7E3F /* LocalesTableViewController.swift in Sources */,
 				3A568B9D28173577005B7E3F /* TablasFrogmiUITests.swift in Sources */,
+				3A568BB728173D95005B7E3F /* LocalesTableViewCell.swift in Sources */,
+				3A568BBE28177424005B7E3F /* Local.swift in Sources */,
+				3A568BC528177443005B7E3F /* Conectar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
