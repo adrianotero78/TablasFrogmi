@@ -16,6 +16,8 @@ class LocalesTableViewController: UITableViewController {
     private var mensaje : String = ""
     var items : Respuesta = Respuesta(data: [Data(id: "", attributes: Attributes(name: "Consultando", code: "", address: "")) ], meta: Meta(pagination: Pagination(current_page: 1, total: 1)), links: Links(next: ""))
     private var bandera : Int = 0
+    private var datosPorPagina : Int = 20
+    
     var refresshControl:UIRefreshControl = {
 
     let refresControl = UIRefreshControl()
@@ -26,16 +28,18 @@ class LocalesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.bandera = 1
+        self.tableView.addSubview(self.refresshControl)
+        print (self.bandera)
+        conectar.proximaPagina(pagina: self.bandera)
         conectar.buscarLocales { (result) in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let respuesta):
-                    //self.items = respuesta
-                    self.bandera = 1
-                    print (self.bandera)
                     self.updateUI(with: respuesta)
                 case .failure(let error):
                     self.mensaje = "Error: \(error)"
+                    self.displayError(error, title: "Falla al cargar Datos")
                 }
             }
         }
@@ -43,7 +47,7 @@ class LocalesTableViewController: UITableViewController {
         print("aaaaaa")
         
         //actualizar
-        self.tableView.addSubview(self.refresshControl)
+        
         //actualizar fin
         
         // Uncomment the following line to preserve selection between presentations
@@ -58,14 +62,35 @@ class LocalesTableViewController: UITableViewController {
         if bandera == 1 {
             print("AAAAAA")
             self.items = respuesta
-        }else {
-            print("bbbbbb")
-            self.items.data.append(respuesta.data[1])
-        }
             self.tableView.reloadData()
+        }else if (bandera > 1 && bandera <= (respuesta.meta.pagination.total / datosPorPagina)+1 ){
+            print("bbbbbb")
+            print ("SUMA: \((respuesta.meta.pagination.total / datosPorPagina)+1)")
+            for i in 0..<respuesta.data.count {
+                self.items.data.append(respuesta.data[i])
+            }
+            self.tableView.reloadData()
+        }else {
+            self.bandera = (respuesta.meta.pagination.total / datosPorPagina)+1
+            print("Se acabó")
+        }
+        
         //}
     }
     
+    
+    func displayError(_ error: Error, title: String) {
+        //DispatchQueue.main.async {
+        let alert = UIAlertController(title: title, message: error.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cerrar", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        print (self.mensaje)
+        self.bandera -= 1
+        //}
+    }
+                   
+
+
     
     
     // MARK: - Table view data source
@@ -76,12 +101,9 @@ class LocalesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        //DispatchQueue.main.asyncAfter(deadline: .now() + 5){}
-        //print (items.meta)
+
         return items.data.count
-        
-        //return 20
+
     }
 
     
@@ -89,25 +111,35 @@ class LocalesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! LocalesTableViewCell
         let local = items.data[indexPath.item]
         // Configure the cell...
-        cell.addressLabel.text = local.attributes.address
+        if (local.attributes.address != " "){
+            cell.addressLabel.textColor = .black
+            cell.addressLabel.text = local.attributes.address
+        }else {
+            cell.addressLabel.textColor = .red
+            cell.addressLabel.text = "DIRECCIÓN NO REGISTRADA"
+        }
         cell.codeLabel.text = local.attributes.code
         cell.nameLabel.text = local.attributes.name
+        
         return cell
     }
     
 
     @objc func actualizarDatos(_ refresControl: UIRefreshControl){
-      //  conectar.completarDatos(nombre: "julia.riveros@silvagomez.cl", clave: "silvagomez873")
+
+        self.bandera += 1
+        print (self.bandera)
+        conectar.proximaPagina(pagina: self.bandera)
         conectar.buscarLocales { (result) in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let respuesta):
-                    self.bandera += 1
-                    print (self.bandera)
                     self.updateUI(with: respuesta)
                     refresControl.endRefreshing()
                 case .failure(let error):
                     self.mensaje = "Error: \(error)"
+                    self.displayError(error, title: "Falla al cargar Datos")
+                    refresControl.endRefreshing()
                 }
             }
         

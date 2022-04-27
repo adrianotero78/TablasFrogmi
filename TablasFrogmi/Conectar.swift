@@ -9,21 +9,25 @@ import Foundation
 
 class Conectar {
     
+    private var pagina : Int = 0
+    
+    func proximaPagina (pagina : Int){
+        self.pagina = pagina
+        print ("pagina: \(self.pagina)")
+    }
     
     func buscarLocales(completion: @escaping (Result<Respuesta, Error>) -> Void) {
         
-        let url = URL(string:"https://api.frogmi.com/api/v3/stores?page=1&per_page=20")!
+        let datosporPaginas : Int = 20
+        let uuid : String = "b7fa583e-a144-4ec2-9464-e1e514512fb4"
+        let authorization : String = "Bearer bc27271a27527aaf6126c781dd17e7dd"
+        
+        let url = URL(string:"https://api.frogmi.com/api/v3/stores?page=\(self.pagina)&per_page=\(datosporPaginas)")!
         var requestUrl = URLRequest(url: url)
         requestUrl.httpMethod = "GET"
         requestUrl.setValue("application/vnd.api+json", forHTTPHeaderField: "Content-Type")
-        requestUrl.setValue("b7fa583e-a144-4ec2-9464-e1e514512fb4", forHTTPHeaderField: "X-Company-Uuid")
-        requestUrl.setValue("Bearer bc27271a27527aaf6126c781dd17e7dd", forHTTPHeaderField:"Authorization")
-        
-        
-        
-        //let body = ["nombre" : "\(self.nombre)" , "clave" : "\(self.clave)"]
-        //let bodyData = try? JSONSerialization.data( withJSONObject: body, options: [] )
-        //requestUrl.httpBody = bodyData
+        requestUrl.setValue(uuid, forHTTPHeaderField: "X-Company-Uuid")
+        requestUrl.setValue(authorization, forHTTPHeaderField:"Authorization")
         
         let task = URLSession.shared
             task.dataTask(with: requestUrl) { (data, response, error) in
