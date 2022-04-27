@@ -13,7 +13,6 @@ struct Respuesta: Codable {
     var links: Links
 }
 
-
 struct Data: Codable {
     var id: String
     var attributes: Attributes

@@ -12,9 +12,10 @@ private let reuseIdentifier = "Cell"
 
 class LocalesTableViewController: UITableViewController {
 
+    
     private let conectar = Conectar()
     private var mensaje : String = ""
-    var items : Respuesta = Respuesta(data: [Data(id: "", attributes: Attributes(name: "Consultando", code: "", address: "")) ], meta: Meta(pagination: Pagination(current_page: 1, total: 1)), links: Links(next: ""))
+    private var items : Respuesta = Respuesta(data: [Data(id: "", attributes: Attributes(name: "Consultando", code: "", address: "")) ], meta: Meta(pagination: Pagination(current_page: 1, total: 1)), links: Links(next: ""))
     private var bandera : Int = 0
     private var datosPorPagina : Int = 20
     
@@ -30,7 +31,7 @@ class LocalesTableViewController: UITableViewController {
         super.viewDidLoad()
         self.bandera = 1
         self.tableView.addSubview(self.refresshControl)
-        print (self.bandera)
+        print (self.bandera) //Borrar linea
         conectar.proximaPagina(pagina: self.bandera)
         conectar.buscarLocales { (result) in
             DispatchQueue.main.async {
@@ -43,67 +44,45 @@ class LocalesTableViewController: UITableViewController {
                 }
             }
         }
-        //self.tableView.reloadData()
-        print("aaaaaa")
-        
-        //actualizar
-        
-        //actualizar fin
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     func updateUI(with respuesta: Respuesta){
-       // DispatchQueue.main.async {
+
         if bandera == 1 {
-            print("AAAAAA")
             self.items = respuesta
             self.tableView.reloadData()
         }else if (bandera > 1 && bandera <= (respuesta.meta.pagination.total / datosPorPagina)+1 ){
-            print("bbbbbb")
-            print ("SUMA: \((respuesta.meta.pagination.total / datosPorPagina)+1)")
+
             for i in 0..<respuesta.data.count {
                 self.items.data.append(respuesta.data[i])
             }
             self.tableView.reloadData()
         }else {
             self.bandera = (respuesta.meta.pagination.total / datosPorPagina)+1
-            print("Se acabó")
         }
-        
-        //}
     }
     
     
     func displayError(_ error: Error, title: String) {
-        //DispatchQueue.main.async {
+
         let alert = UIAlertController(title: title, message: error.localizedDescription, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cerrar", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         print (self.mensaje)
         self.bandera -= 1
-        //}
+
     }
                    
-
-
-    
-    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return items.data.count
-
     }
 
     
@@ -128,7 +107,7 @@ class LocalesTableViewController: UITableViewController {
     @objc func actualizarDatos(_ refresControl: UIRefreshControl){
 
         self.bandera += 1
-        print (self.bandera)
+        print (self.bandera) //Borrar linea
         conectar.proximaPagina(pagina: self.bandera)
         conectar.buscarLocales { (result) in
             DispatchQueue.main.async {
@@ -142,11 +121,6 @@ class LocalesTableViewController: UITableViewController {
                     refresControl.endRefreshing()
                 }
             }
-        
-       //     collectionView.reloadData()
-            print("TODO LISTO")
-            //refresControl.endRefreshing()
         }
     }
-
 }

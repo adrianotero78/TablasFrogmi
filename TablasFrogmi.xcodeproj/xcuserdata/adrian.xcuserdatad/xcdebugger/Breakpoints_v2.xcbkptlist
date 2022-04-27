@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A9018BC4-DEDC-48D9-A1C5-F575D0E1048C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A6AD460-A672-4521-8EB0-C247513EC354"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TablasFrogmi/LocalesTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5A6AD460-A672-4521-8EB0-C247513EC354 - 6c91c43c6fb0ecdb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TablasFrogmi.LocalesTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TablasFrogmi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/TablasFrogmi/TablasFrogmi/LocalesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "5A6AD460-A672-4521-8EB0-C247513EC354 - 7a0b9dcb22d577c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TablasFrogmi.Respuesta, Swift.Error&gt;) -&gt; () in TablasFrogmi.LocalesTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TablasFrogmi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/TablasFrogmi/TablasFrogmi/LocalesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "158">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BA1A0F3-1493-484A-8FE7-E1B91D607EDC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TablasFrogmi/LocalesTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5BA1A0F3-1493-484A-8FE7-E1B91D607EDC - 7dd255ef0483a1a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Result&lt;TablasFrogmi.Respuesta, Swift.Error&gt;) -&gt; () in TablasFrogmi.LocalesTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TablasFrogmi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/TablasFrogmi/TablasFrogmi/LocalesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "5BA1A0F3-1493-484A-8FE7-E1B91D607EDC - 7dd255ef0483a1a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Result&lt;TablasFrogmi.Respuesta, Swift.Error&gt;) -&gt; () in TablasFrogmi.LocalesTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TablasFrogmi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/TablasFrogmi/TablasFrogmi/LocalesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "210">
+               </Location>
+               <Location
+                  uuid = "5BA1A0F3-1493-484A-8FE7-E1B91D607EDC - 7dd255ef0483a1a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Result&lt;TablasFrogmi.Respuesta, Swift.Error&gt;) -&gt; () in TablasFrogmi.LocalesTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TablasFrogmi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/TablasFrogmi/TablasFrogmi/LocalesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "521">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F047B9CE-9418-4BAB-B761-335AFF090B6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TablasFrogmi/LocalesTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F047B9CE-9418-4BAB-B761-335AFF090B6E - 7a0b9dcb22d57700"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TablasFrogmi.Respuesta, Swift.Error&gt;) -&gt; () in TablasFrogmi.LocalesTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TablasFrogmi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/TablasFrogmi/TablasFrogmi/LocalesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "F047B9CE-9418-4BAB-B761-335AFF090B6E - 7a0b9dcb22d57700"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TablasFrogmi.Respuesta, Swift.Error&gt;) -&gt; () in TablasFrogmi.LocalesTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TablasFrogmi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/TablasFrogmi/TablasFrogmi/LocalesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "210">
+               </Location>
+               <Location
+                  uuid = "F047B9CE-9418-4BAB-B761-335AFF090B6E - 7a0b9dcb22d57700"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TablasFrogmi.Respuesta, Swift.Error&gt;) -&gt; () in TablasFrogmi.LocalesTableViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TablasFrogmi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/TablasFrogmi/TablasFrogmi/LocalesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "521">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8BA0EF0-C6E8-4604-821C-89A186DB44ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TablasFrogmi/Conectar.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "Conectar"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3AAE830E-202D-4E07-B7E2-D5D98EA7351C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TablasFrogmiTests/TablasFrogmiTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

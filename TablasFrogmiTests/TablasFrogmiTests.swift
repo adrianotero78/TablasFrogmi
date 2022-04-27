@@ -10,24 +10,42 @@ import XCTest
 
 class TablasFrogmiTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var conectar : Conectar!
+        
+    override func setUp() {
+        super.setUp()
+        conectar = Conectar()
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        conectar = nil
+    }
+    
+    func testProximaPagina (){
+        let recibo = 4
+        conectar?.proximaPagina(pagina: recibo)
+        let obtengo = conectar?.pagina
+        XCTAssertEqual(recibo, obtengo, "Debe ser el mismo numero")
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    func testNumeroLocalesPrimeraPantalla() {
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        //var datos : Int = 0
+        
+        conectar.proximaPagina(pagina: 1)
+        conectar.buscarLocales{ (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let respuesta):
+                    XCTAssertEqual(respuesta.data.count, 20, "Maximo que permito" )
+                case .failure(let error):
+                    XCTAssertNil(error)
+                }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+            }
         }
+
     }
 
 }
