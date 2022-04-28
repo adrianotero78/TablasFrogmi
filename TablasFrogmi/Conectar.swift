@@ -20,7 +20,7 @@ class Conectar {
         let datosporPaginas : Int = 20
         let uuid : String = "b7fa583e-a144-4ec2-9464-e1e514512fb4"
         // Antes de ejecutar la APP debe completar el token de autorización
-        let authorization : String = "Bearer bc27271a27527aaf6126c781dd17e7dd"
+        let authorization : String = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
         
         let url = URL(string:"https://api.frogmi.com/api/v3/stores?page=\(self.pagina)&per_page=\(datosporPaginas)")!
         var requestUrl = URLRequest(url: url)

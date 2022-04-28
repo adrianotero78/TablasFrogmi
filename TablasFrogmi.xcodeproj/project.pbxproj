@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A39A4C7281A104300162884 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A39A4C6281A104300162884 /* README.txt */; };
 		3A568B7B28173566005B7E3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568B7A28173566005B7E3F /* AppDelegate.swift */; };
 		3A568B7D28173566005B7E3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A568B7C28173566005B7E3F /* SceneDelegate.swift */; };
 		3A568B8228173566005B7E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A568B8028173566005B7E3F /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A39A4C6281A104300162884 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		3A568B7728173566005B7E3F /* TablasFrogmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TablasFrogmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A568B7A28173566005B7E3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A568B7C28173566005B7E3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A39A4C2281A0FB300162884 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				3A568BBB28177423005B7E3F /* Local.swift */,
+				3A568BC228177443005B7E3F /* Conectar.swift */,
+			);
+			name = Modelo;
+			sourceTree = "<group>";
+		};
+		3A39A4C3281A0FD800162884 /* Vista */ = {
+			isa = PBXGroup;
+			children = (
+				3A568BB428173D94005B7E3F /* LocalesTableViewCell.swift */,
+			);
+			path = Vista;
+			sourceTree = "<group>";
+		};
+		3A39A4C5281A101800162884 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A568BAD28173822005B7E3F /* LocalesTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		3A568B6E28173565005B7E3F = {
 			isa = PBXGroup;
 			children = (
@@ -113,14 +140,14 @@
 		3A568B7928173566005B7E3F /* TablasFrogmi */ = {
 			isa = PBXGroup;
 			children = (
-				3A568B7A28173566005B7E3F /* AppDelegate.swift */,
-				3A568B7C28173566005B7E3F /* SceneDelegate.swift */,
 				3A568B8028173566005B7E3F /* Main.storyboard */,
-				3A568BBB28177423005B7E3F /* Local.swift */,
-				3A568BC228177443005B7E3F /* Conectar.swift */,
-				3A568BAD28173822005B7E3F /* LocalesTableViewController.swift */,
-				3A568BB428173D94005B7E3F /* LocalesTableViewCell.swift */,
+				3A39A4C6281A104300162884 /* README.txt */,
+				3A39A4C2281A0FB300162884 /* Modelo */,
+				3A39A4C3281A0FD800162884 /* Vista */,
+				3A39A4C5281A101800162884 /* Controller */,
 				3A568B8328173576005B7E3F /* Assets.xcassets */,
+				3A568B7C28173566005B7E3F /* SceneDelegate.swift */,
+				3A568B7A28173566005B7E3F /* AppDelegate.swift */,
 				3A568B8528173576005B7E3F /* LaunchScreen.storyboard */,
 				3A568B8828173576005B7E3F /* Info.plist */,
 			);
@@ -250,6 +277,7 @@
 			files = (
 				3A568B8728173576005B7E3F /* LaunchScreen.storyboard in Resources */,
 				3A568B8428173576005B7E3F /* Assets.xcassets in Resources */,
+				3A39A4C7281A104300162884 /* README.txt in Resources */,
 				3A568B8228173566005B7E3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
